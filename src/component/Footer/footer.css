@@ -1,0 +1,24 @@
+.custom-footer {
+    background-color: #1f2122;
+    padding: 30px 0; /* changed from 20px */
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 60px;
+    border-radius: 0 0 23px 23px;
+    
+  }
+  
+  
+  .footer-container {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .footer-container span {
+    color: #e75e8d;
+    font-weight: 500;
+  }
+  
