@@ -1,19 +1,20 @@
 
 .header-section {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    background-color: rgba(31, 33, 34, 0.95);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    padding: 10px 0;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .header-section.is-sticky {
-    background-color: rgba(23, 24, 25, 0.98);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
-  }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background-color: #000; /* Changed to solid black */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-section.is-sticky {
+  background-color: #000; /* Also changed to solid black */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+}
+
   
   .navbar {
     padding: 0.5rem 1rem;

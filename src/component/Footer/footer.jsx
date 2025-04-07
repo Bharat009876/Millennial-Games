@@ -6,7 +6,12 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4} className="mb-4">
-            <h5 className="text-uppercase mb-3">Millenial Games</h5>
+          <img
+            src="/src/assets/images/logo.png"
+            alt="Gamify Logo"
+            style={{ height: "100px", width: "auto", marginRight: "5px" }}
+          />
+        
             <p>
             🎮Where Every Millennial Finds Their Game – Dive Into a World of Next-Gen Adventures, Strategy, and Fun!
             </p>
@@ -24,7 +29,7 @@ const Footer = () => {
 
           <Col md={3} className="mb-4">
             <h6 className="text-uppercase mb-3">Contact</h6>
-            <p>Email: bharat.22jics196@jietjodhpur.ac.in.com</p>
+            <p>Email: bharat.22jics196@jietjodhpur.ac.in</p>
             <p>Phone: +91 7426946804</p>
             <p>Address: JIET Jodhpur</p>
           </Col>

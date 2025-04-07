@@ -7,7 +7,7 @@ const Gemify = () => {
   const [nextUrl, setNextUrl] = useState(null);
 
   const API_KEY = import.meta.env.VITE_APIKEY;
-  const initialUrl = `https://api.rawg.io/api/games?key=${API_KEY}&dates=2022-01-01,2022-12-31&ordering=-added`;
+  const initialUrl = `https://api.rawg.io/api/games?key=${API_KEY}&dates=2010-01-01,2015-12-31&ordering=-added`;
 
   const getPlatformStr = (platforms) => {
     const platformStr = platforms.map((pl) => pl.platform.name).join(", ");

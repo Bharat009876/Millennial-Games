@@ -1,226 +1,62 @@
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900");
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, div
-pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q,
-s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-figure, header, nav, section, article, aside, footer, figcaption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-}
-
-.clearfix:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-
-.clearfix {
-  display: inline-block;
-}
-
-html[xmlns] .clearfix {
-  display: block;
-}
-
-* html .clearfix {
-  height: 1%;
-}
-
-ul, li {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-header, nav, section, article, aside, footer, hgroup {
-  display: block;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap");
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
+body {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  background-color: #1e1e1e;
+  background-color: #1f2122;
   font-size: 16px;
-  -ms-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-	color: #CCC;
-  text-decoration: none !important;
-}
-a:hover {
-	color: #F99;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: #fff;
-  font-weight: 700;
-}
-
-ul {
-  margin-bottom: 0px;
-}
-
-p {
-  font-size: 15px;
-  line-height: 30px;
   color: #fff;
 }
 
 img {
   width: 100%;
-  overflow: hidden;
-}
-
-/* 
----------------------------------------------
-Global Styles
---------------------------------------------- 
-*/
-html,
-body {
-  background: #1f2122;
-  font-family: 'Poppins', sans-serif;
-}
-
-body .page-content {
-  margin-top: 110px;
-  background-color: #27292a;
-  padding: 60px;
   border-radius: 23px;
+  max-height: 250px;
+}
+
+a {
+  color: #CCC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #F99;
+}
+
+h4 {
+  color: #ec6090;
+  font-size: 34px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
 }
 
 p {
   font-size: 15px;
   color: #666;
   line-height: 30px;
-  margin-bottom: 0px;
 }
 
-::selection {
-  background: #e75e8d;
-  color: #fff;
-}
-
-::-moz-selection {
-  background: #e75e8d;
-  color: #fff;
-}
-
-.templatemo-item {
-	max-width: 80px; 
-	border-radius: 23px;
-}
-
-.main-button a {
-  font-size: 14px;
-  color: #fff;
-  background-color: #e75e8d;
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-  
-}
-
-.main-button a:hover {
-  background-color: #fff;
-  color: #e75e8d;
-}
-
-.main-border-button a {
-  font-size: 14px;
-  color: #ec6090;
-  background-color: transparent;
-  border: 1px solid #ec6090;
-  padding: 12px 30px;
-  display: inline-block;
-  border-radius: 25px;
-  font-weight: 400;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
-  transition: all .3s;
-  position: relative;
-  overflow: hidden;
-}
-
-.main-border-button a:hover {
-  border-color: #fff;
-  background-color: #fff;
-  color: #e75e8d;
-}
-
-.border-no-active a {
-  border-color: #666;
-  color: #666;
-}
-
-.border-no-active a:hover{
-  border-color: #666;
-  color: #666;
-  background-color: transparent;
-}
-
-section {
-  margin-top: 120px;
-}
-
-.heading-section h4 {
-  color: #ec6090;
-  font-size: 34px;
-  text-decoration: none;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.heading-section h4 em {
-  color: #fff;
-  font-style: normal;
-  text-decoration: underline;
-}
-
-/* 
----------------------------------------------
-Pre-loader Style
---------------------------------------------- 
-*/
-
+/* Preloader */
 .js-preloader {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(0,0,0,0.99);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
+  z-index: 9999;
   opacity: 1;
   visibility: visible;
-  z-index: 9999;
-  -webkit-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
 
@@ -230,39 +66,10 @@ Pre-loader Style
   pointer-events: none;
 }
 
-@-webkit-keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
-}
-
-@keyframes dot {
-  50% {
-      -webkit-transform: translateX(96px);
-      transform: translateX(96px);
-  }
-}
-
-@-webkit-keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
-}
-
-@keyframes dots {
-  50% {
-      -webkit-transform: translateX(-31px);
-      transform: translateX(-31px);
-  }
-}
-
 .preloader-inner {
   position: relative;
   width: 142px;
   height: 40px;
-  background: transparent;
 }
 
 .preloader-inner .dot {
@@ -273,38 +80,37 @@ Pre-loader Style
   left: 15px;
   background: #e75e8d;
   border-radius: 50%;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-animation: dot 2.8s infinite;
   animation: dot 2.8s infinite;
 }
 
 .preloader-inner .dots {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
+  display: flex;
+  gap: 16px;
   margin-top: 12px;
   margin-left: 31px;
-  -webkit-animation: dots 2.8s infinite;
   animation: dots 2.8s infinite;
 }
 
 .preloader-inner .dots span {
-  display: block;
-  float: left;
   width: 16px;
   height: 16px;
-  margin-left: 16px;
   background: #e75e8d;
   border-radius: 50%;
 }
 
+@keyframes dot {
+  50% {
+    transform: translateX(96px);
+  }
+}
 
-/* 
----------------------------------------------
-Most Popular Style
---------------------------------------------- 
-*/
+@keyframes dots {
+  50% {
+    transform: translateX(-31px);
+  }
+}
 
+/* Games Section */
 .most-popular {
   margin-top: 30px;
   padding: 30px;
@@ -319,64 +125,69 @@ Most Popular Style
   margin-bottom: 30px;
 }
 
-.most-popular .item .item {
-  padding: 0px;
-  border-radius: 0px;
-  background-color: transparent;
-  margin-bottom: 0px;
-}
-
-.most-popular .item img {
-  border-radius: 23px;
-  max-height: 250px;
-}
-
-.most-popular .item h4 {
+.game-name {
   font-size: 15px;
   margin-top: 20px;
-  margin-bottom: 0px;
   display: inline-block;
 }
 
-.most-popular .item span {
+.platforms {
   color: #666;
   display: block;
   margin-top: 7px;
   font-weight: 400;
 }
 
-.most-popular .item li span{
-  display: inline-block;
-  color: #bbb;
-  padding-left: 5px;
-}
-
-.most-popular .item ul {
+.item ul {
   float: right;
   margin-top: 20px;
 }
 
-.most-popular .item ul li {
-  text-align: right;
+.item ul li {
   color: #fff;
   font-size: 14px;
+  text-align: right;
 }
 
-.most-popular .item ul li:first-child i {
+.item ul li span {
+  padding-left: 5px;
+  color: #bbb;
+}
+
+.item ul li:first-child i {
   color: yellow;
 }
 
-.most-popular .item ul li:last-child i {
+.item ul li:last-child i {
   color: #ec6090;
 }
 
-.most-popular .main-button {
+.main-button {
   text-align: center;
   margin-bottom: -53px;
 }
 
-
-.hidden{
-  display: none;
+.main-button button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
 }
 
+.main-button button:hover {
+  background-color: #fff;
+  color: #e75e8d;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
