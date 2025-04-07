@@ -1,4 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
+import logo from "../../assets/images/logo.png"
 
 const Footer = () => {
   return (
@@ -7,7 +8,7 @@ const Footer = () => {
         <Row>
           <Col md={4} className="mb-4">
           <img
-            src="/src/assets/images/logo.png"
+            src={logo}
             alt="Gamify Logo"
             style={{ height: "100px", width: "auto", marginRight: "5px" }}
           />
