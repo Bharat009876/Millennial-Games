@@ -1,14 +1,15 @@
 import { Navbar, Container, Nav, Form, FormControl } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png"
 
-// Accept props with fallback to prevent error
+
 const Header = ({ searchTerm = "", setSearchTerm = () => {} }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="w-100">
       <Container fluid>
           <img
-            src="/src/assets/images/logo.png"
-            alt="Gamify Logo"
+            src={logo}
+            alt="Millennial Games Logo"
             style={{ height: "120px", width: "auto", marginRight: "5px" }}
           />
         
