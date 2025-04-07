@@ -27,3 +27,7 @@ Clone the repository:
 git clone https://github.com/Bharat009876/Millennial-Games.git
 cd Millennial-Games
 # Millennial-Games
+
+## 📽️ Demo
+
+Watch the screen recording of the project [here](https://drive.google.com/file/d/1uKYNyKPGGM8pzd7Y0tZlJCxF-_6ykhpw/view?usp=drive_link).
